@@ -1,0 +1,96 @@
+:root{
+    /* Light */
+    --color-light-50: #f8fafc;
+
+    /* Dark */
+    --color-dark-50: rgb(75, 75, 78);
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+}
+
+.dark-icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    cursor: pointer;
+}
+
+/*Inone dark*/
+#icone-lua{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container-login{
+    animation: dark-to-light-background 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 300px) and (max-width: 820px){
+    .container-login{
+        animation: dark-to-light-background 0.3s ease-in-out;
+    }
+}
+
+.dark#container, .dark#container .texto-login, .dark#container .cadastro, 
+.dark#container .campo-login, .dark#container .cadastro-mobille{
+    color: var(--color-light-50);
+    background: var(--color-dark-100);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#container .texto-login{
+    color: var(--color-light-50);
+    background: var(--color-dark-50);
+    animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#container .input-field input,
+.dark#container .input-field i{
+    color: var(--color-light-50);
+}
+
+/*TELA LOGIN*/
+.dark#container .entrada_dados input, .dark#container .entrada-dados-cadastro input,
+.dark#container .entrada-dados-cadastro-mobille input{
+    background: var(--color-dark-100);
+    color: var(--color-light-50);
+}
+
+.dark#container .entrada_dados, 
+.dark#container .entrada-dados-cadastro input{
+    border: 2px var(--color-light-50) solid;
+}
+
+
+/*TELA CADASTRO*/
+.dark#container ::placeholder{
+    color: var(--color-light-50);
+    opacity: 0.7;
+}
+
+.dark#container #botao-voltar{
+    color: var(--color-light-50);   
+} 
+
+@keyframes dark-to-light-background {
+    0% {
+        background-color:var(--color-dark-100);
+    }
+    100.0% {
+        background-color:var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark-background {
+    0% {
+        background-color:var(--color-light-50);
+    }
+    100.0% {
+        background-color:var(--color-dark-100); 
+    }
+}
+
+
+
+/*////////////////////////////////////////////////////////////////////////////////////*/

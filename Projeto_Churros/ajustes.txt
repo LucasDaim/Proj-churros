@@ -1,0 +1,17 @@
+telas:
+- admin.php
+	fazer css no padrao.
+
+-cliente.php
+	pensar o que colocar nesta tela. Ideia, botar um carrocel.
+
+-lista_cliente.php e lista_produto.php
+	padrao do site, pensar na forma de exibir os dados do banco.
+
+-login.php
+	bloquer atualizaçao da pagina ao apertar o botao.
+
+
+
+
+-Colocar um botão para baixar o banco de dados no formato pdf.
